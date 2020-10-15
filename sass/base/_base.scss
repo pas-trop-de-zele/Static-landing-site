@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // 1 rem = 10px assuming browser default is 16px;
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}

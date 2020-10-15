@@ -1,0 +1,22 @@
+{
+  "name": "static-landing-site",
+  "version": "1.0.0",
+  "description": "Static landing site for accounting/tax agency",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --watch ./sass --output ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pas-trop-de-zele/Static-landing-site.git"
+  },
+  "author": "Sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pas-trop-de-zele/Static-landing-site/issues"
+  },
+  "homepage": "https://github.com/pas-trop-de-zele/Static-landing-site#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

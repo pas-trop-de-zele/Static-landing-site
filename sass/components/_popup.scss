@@ -1,0 +1,77 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    backdrop-filter: blur(1rem) brightness(0.5);
+    z-index: 100;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    
+
+    &:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:target > * {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__content {
+        @include absoluteCenter;
+        z-index: 120;
+        height: 60vh;
+        width: 60vw;
+        background-color: $color-white;
+        transition: all 0.8s;
+        transform: translate(-50%, -50%) scale(0.3);
+        border-radius: 3px;
+
+        &--left {
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 8rem 2rem;
+        }
+
+        &--right {
+            float: left;
+            position: relative;
+            height: 100%;
+            width: 50%;
+        }
+    }
+
+    &__picture {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__close {
+        display: block;
+        font-size: 4.5rem;
+        position: absolute;
+        line-height: 1rem;
+        top: 3rem;
+        right: 3rem;
+        cursor: pointer;
+        z-index: 130;
+        text-decoration: none;
+        color: $color-grey;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.illustration {
+    @include clearfix;
+    height: 33rem;
+    padding: 0 1rem;
+
+    &__picture {
+        width: 33.333333%;
+        float: left;
+    }
+
+    &__description {
+        float: left;
+        text-align: right;
+        width: 66.666666%;
+
+        &.second {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.form {
+    width: 60%;
+    margin: 0 auto;
+
+    &__group {
+        margin-bottom: 3rem;
+
+        &.title {
+            margin-bottom: 7.5rem;
+        }
+
+        &.submit {
+            text-align: center;
+            transform: translateY(-2.5rem);
+        }
+    }
+
+    &__label{
+        display: block;
+        font-weight: 500;
+        line-height: 1.5;
+        opacity: 0.5;
+        transform: translateY(-5rem);
+        transition: all 0.4s;
+    }
+
+    &__input:focus + &__label {
+        opacity: 0.9;
+    }
+
+    &__input {
+        width: 100%;
+        display: block;
+        border: none;
+        border-bottom: 1px solid rgba($color-grey, 0.2);
+        transition: all 0.4s;
+
+        &:focus {
+            outline: none;
+            border-color: $color-primary;
+        }
+    }
+}

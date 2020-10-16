@@ -10,12 +10,12 @@
 </head>
 <body>
     <div class="navigation">
-        <a href="#" class="navigation__logo">Hdtax</a>
+        <a href="#" class="navigation__logo">&#60;&#47;hdtax&#62;</a>
         <ul class="navigation__list">
             <li class="navigation__item"><a href="#">About</a></li>
             <li class="navigation__item"><a href="#">Service</a></li>
             <li class="navigation__item"><a href="#">Contact</a></li>
-            <li class="navigation__item navigation__item--cta"><a href="#">Call us</a></li>
+            <li class="navigation__item btn btn--orange"><a href="#">Call us</a></li>
         </ul>
     </div>
 
@@ -41,7 +41,7 @@
                 <div class="illustration clearfix">
                     <img class="illustration__picture" src="svgs/savings.svg" alt="">
                     <div class="illustration__description">
-                        <h4 class="heading-tertiary">Maximizing your tax returns</h4>
+                        <h3 class="heading-tertiary">Maximizing your tax returns</h3>
                         <p class="paragraph">We have teams specialing in retrieving your hard earned dollars.<br>Over 76% of our clients got more returns than they could have at other agencies*</p>
                     </div>
                 </div>
@@ -49,24 +49,70 @@
             <div class="row">
                 <div class="illustration clearfix">
                     <div class="illustration__description second">
-                        <h4 class="heading-tertiary">Quick and easy payroll service</h4>
+                        <h3 class="heading-tertiary">Quick and easy payroll service</h3>
                         <p class="paragraph">We know your time is high value and we strive to restore your most precious resource <br> Let us do the unimportants so you could do the IMPORTANTs!</p>
                     </div>
                     <img class="illustration__picture" src="svgs/payroll.svg" alt="">
                 </div>
             </div>
+
             <div class="row">
                 <div class="illustration clearfix">
                     <img class="illustration__picture" src="svgs/fill-forms.svg" alt="">
                     <div class="illustration__description">
-                        <h4 class="heading-tertiary">Requesting governmental assistance</h4>
+                        <h3 class="heading-tertiary">Requesting governmental assistance</h3>
                         <p class="paragraph">Applying for governmental programs could be intimidating even to the best of us, <br>but do not worry because we are here you make sure you got the help you need.</p>
-                        <p class="paragraph">We have great success in programs such as but not limit to EDD, SDI, PFL, etc.</p>
+                        <p class="paragraph">We have great success in applying for such as but not limit to EDD, SDI, PFL, etc.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="cta-box">
+                    <a class="btn btn--orange" id="exit-popup" href="#popup">Let us be your right hand man</a>
+                </div>
+            </div>
         </div>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <a class="popup__close" href="#exit-popup">&#215;</a>
+                <div class="popup__content--left">
+                    <form class="form" action="#" autocomplete="off">
+                        <div class="form__group title">
+                            <h3 class="heading-tertiary u-margin-bottom-big">Drop us a message</h3>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" id="full-name" name="full-name">
+                            <label class="form__label" for="full-name">Full Name</label>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="email" id="email" name="email">
+                            <label class="form__label" for="email">Email</label>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="tel" id="phone" name="phone">
+                            <label class="form__label" for="phone">Phone</label>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" id="message" name="message">
+                            <label class="form__label" for="message">Message</label>
+                        </div>
+                        <div class="form__group submit">
+                            <button href="#" class="btn btn--orange">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="popup__content--right">
+                    <img class="popup__picture" src="svgs/contact.svg" alt="">
+                </div>
+            </div>
+        </div>
+
     </main>
     
+    <footer class="footer">
+        
+    </footer>
 </body>
 </html>

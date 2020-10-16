@@ -8,17 +8,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;   
-    z-index: 500; 
+    z-index: 100; 
 
     &__logo {
-        text-transform: uppercase;
         text-decoration: none;
         color: white;
         font-weight: 600;
         font-size: 3rem;
         text-align: center;
-        outline: 2px solid white;
-        outline-offset: 4px;
     }
     
     &__list {
@@ -43,28 +40,13 @@
         & a:link, 
         & a:active {
             font-weight: 500;
-            font-size: 1.6rem;
+            font-size: $default-font-size;
             color: white;
             text-decoration: none;
         }
 
-        &--cta {
-            padding: 1rem 2rem;
-            transition: transform 0.3s;
-            background: $color-primary;
-            // box-shadow to fix issue with trailing pixels when scaling up and down
-            box-shadow: 0 0 1px rgba($color-black, 0.05);
-            cursor: pointer;
-
-            &:hover {
-                transform: scale(1.2);
-            }
-
-            & a,
-            & a:link,
-            & a:active {
-                color: $color-black;
-            }
+        &.btn {
+            border: none;
         }
     }
 }

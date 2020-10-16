@@ -16,8 +16,9 @@
         color: white;
         font-weight: 600;
         font-size: 3rem;
-        letter-spacing: 1rem;
         text-align: center;
+        outline: 2px solid white;
+        outline-offset: 4px;
     }
     
     &__list {

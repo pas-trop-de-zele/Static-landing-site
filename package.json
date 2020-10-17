@@ -4,7 +4,9 @@
   "description": "Static landing site for accounting/tax agency",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass --watch ./sass --output ./css"
+    "liveDev": "live-server",
+    "watch:sass": "node-sass --watch ./sass --output ./css",
+    "start": "npm-run-all --parallel liveDev compile:sass"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,9 @@
   "homepage": "https://github.com/pas-trop-de-zele/Static-landing-site#readme",
   "dependencies": {
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5"
   }
 }

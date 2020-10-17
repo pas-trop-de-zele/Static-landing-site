@@ -1,0 +1,52 @@
+.footer {
+    padding: 5rem 0;
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    
+    &__logo {
+        text-decoration: none;
+        color: $color-grey;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    &__item {
+        list-style-type: none;
+        font-size: 2rem;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        & i {
+            transform: translateY(-5px)
+        }
+        
+    }    
+
+    &__link {
+        color: $color-grey;
+        transition: inherit;
+        
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__decorLine {
+        width: 40%;
+        height: 2px;
+        border: none;
+        background-color: rgba($color-grey, 0.2);
+        margin: 0 auto;
+    }
+}   

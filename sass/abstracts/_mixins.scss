@@ -10,3 +10,23 @@
     display: block;
     clear: both;
 }
+
+/*
+0 - 600px       = Phone
+600px - 900px   = Tablet Portrait
+900px - 1200px  = Tablet landscape
+1200px - 1800px = Default
+*/
+
+// RESPONSIVE QUERIES
+@mixin respond($size) {
+    @if $size == phone {
+        @media (max-width: 37.5em) { @content };
+    }
+    @if $size == tab-port {
+        @media (max-width: 60em) { @content };
+    }
+    @if $size == tab-land {
+        @media (max-width: 75em) { @content };
+    }
+}

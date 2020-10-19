@@ -12,6 +12,18 @@
         position: absolute;
         top: 35%;
         left: 20%;
+        
+
+        @include respond(tab-land) {
+            left: 10%;
+            padding: 0 0 0 2%;
+        }
+
+        @include respond(tab-port) {
+            @include absoluteCenter;
+            width: 100%;
+            padding: 0 2% 0 10%;
+        }
     }
 
     &__icon-box {

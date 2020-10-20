@@ -12,6 +12,10 @@
     background-attachment: fixed;
     clip-path: ellipse(100vw 63vh at 50% 30%);
 
+    @include respond(tab-port) {
+        background-attachment: unset;
+    }
+
     &__text-box {
         position: absolute;
         top: 35%;

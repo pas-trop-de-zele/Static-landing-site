@@ -8,13 +8,15 @@
         width: 30%;
         margin: 0 auto;
         padding: 2rem 0;
+
+        @include respond(phone) {
+            width: 48%;
+        }
     }
     
     &__logo {
-        text-decoration: none;
-        color: $color-grey;
-        font-weight: 600;
-        font-size: 3rem;
+        outline: 3px solid $color-grey;
+        outline-offset: 3px;
     }
 
     &__item {
@@ -48,5 +50,9 @@
         border: none;
         background-color: rgba($color-grey, 0.2);
         margin: 0 auto;
+
+        @include respond(phone) {
+            width: 55%;
+        }
     }
 }   

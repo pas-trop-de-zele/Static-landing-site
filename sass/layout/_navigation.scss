@@ -1,14 +1,23 @@
 .navigation {
     position: absolute;
-    padding: 2rem;
-    top: 5rem;
+    top: 3rem;
     left: 50%;
     transform: translateX(-50%);
-    width: $nav-width;
+    padding: 2rem;
+    width: 100%;
+    max-width: $nav-width;
     display: flex;
     justify-content: space-between;
     align-items: center;   
     z-index: 100; 
+
+    @include respond(tab-port) {
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 8vh;
+        background-color: rgba($color-black, 0.2);
+    }
 
     &__logo {
         text-decoration: none;
@@ -16,19 +25,68 @@
         font-weight: 600;
         font-size: 3rem;
         text-align: center;
+        // margin-bottom: 1rem;
+        outline: 3px solid $color-white;
+        outline-offset: 3px;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__navBurger {
+        color: white;
+        font-size: 4rem;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 200;
+        display: none;
+
+        @include respond(tab-port) {
+            display: block;
+            backdrop-filter: blur(1rem);
+        }
     }
     
     &__list {
-        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         list-style-type: none;
+        transition: all 0.3s;
+        padding-top: 2rem;
+        padding-left: 2rem;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            transform: translateX(-100vw);
+            position: fixed;
+            top: 8vh;
+            left: 0;
+            height: 92vh;
+            width: 100vw;
+            background-color: rgba($color-black, 0.3);
+            backdrop-filter: blur(1rem);
+        }
+    }
+
+    &__input:checked ~ &__list {
+        transform: translateX(0);
     }
 
     &__item {
-        display: inline-block;
         border-bottom: 2px solid transparent;
         transition: all 0.6s;
 
-        &:hover:not(:last-child) {
+        @include respond(tab-port) {
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
+
+        &:hover {
             border-color: $color-primary;
         }
 
@@ -40,13 +98,20 @@
         & a:link, 
         & a:active {
             font-weight: 500;
-            font-size: $default-font-size;
+            font-size: 2rem;
             color: white;
             text-decoration: none;
         }
 
         &.btn {
             border: none;
+            
+            @include respond(tab-port) {
+                font-weight: 500;
+                font-size: $default-font-size;
+                color: white;
+                text-decoration: none;
+            }
         }
     }
 }

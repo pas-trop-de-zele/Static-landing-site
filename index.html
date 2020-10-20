@@ -10,12 +10,13 @@
 </head>
 <body>
     <div class="navigation">
+        <input type="checkbox" id="nav__input" class="navigation__input">
+        <label class="navigation__navBurger" for="nav__input"><i class="fas fa-bars"></i></label>
         <a href="#" class="navigation__logo">HDTAX</a>
         <ul class="navigation__list">
-            <li class="navigation__item"><a href="#">About</a></li>
-            <li class="navigation__item"><a href="#">Service</a></li>
-            <li class="navigation__item"><a href="#">Contact</a></li>
-            <li class="navigation__item btn btn--orange"><a href="#">Call us</a></li>
+            <li class="navigation__item"><a href="#about">About</a></li>
+            <li class="navigation__item"><a href="#infographics">Service</a></li>
+            <li class="navigation__item"><a href="#popup">Contact</a></li>
         </ul>
     </div>
 
@@ -30,13 +31,13 @@
     </div>
 
     <main>
-        <div class="section-about">
+        <div class="section-about" id="about">
             <div class="row">
                 <h2 class="heading-secondary">We are a team of tax professionals, thriving to tailor our services to your needs, be it personal or business related.</h2>
             </div>
         </div>
 
-        <div class="section-infographics">
+        <div class="section-infographics" id="infographics">
             <div class="row">
                 <div class="illustration">
                     <img class="illustration__picture" src="svgs/savings.svg" alt="">
@@ -103,9 +104,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="popup__content--right">
-                    <img class="popup__picture" src="svgs/contact.svg" alt="">
-                </div>
+                    <img class="popup__content--right" src="svgs/contact.svg" alt="">
             </div>
         </div>
 
@@ -115,7 +114,7 @@
         <div class="row">
             <hr class="footer__decorLine">
             <ul class="footer__list">
-                <li class="footer__item"><h3 class="heading-tertiary">HDTAX</h3></li>
+                <li class="footer__item"><h3 class="heading-tertiary footer__logo">HDTAX</h3></li>
                 <li class="footer__item"><a href="" class="footer__link"><i class="fab fa-facebook-f"></i></a></li>
                 <li class="footer__item"><a href="https://www.yelp.com/biz/hd-tax-and-accounting-services-garden-grove" target="_blank" class="footer__link"><i class="fab fa-yelp"></i></a></li>
                 <li class="footer__item"><a href="" class="footer__link"><i class="fab fa-twitter"></i></a></li>

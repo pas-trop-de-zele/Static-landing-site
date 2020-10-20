@@ -9,6 +9,10 @@ body {
     color: $color-white;
     font-size: 10rem;
     font-weight: 700;
+
+    @include respond(phone) {
+        font-size: 9rem;
+    }
 }
 
 .heading-secondary {

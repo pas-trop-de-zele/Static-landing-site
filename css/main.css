@@ -228,6 +228,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   clip-path: ellipse(100vw 63vh at 50% 30%); }
+  @media (max-width: 60em) {
+    .header {
+      background-attachment: unset; } }
   .header__text-box {
     position: absolute;
     top: 35%;

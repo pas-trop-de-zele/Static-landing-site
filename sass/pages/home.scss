@@ -5,6 +5,10 @@
 .section-infographics {
     padding: 10rem 0;
 
+    @include respond(tab-port) {
+        padding: 10rem 0 5rem 0;
+    }
+
     & .cta-box {
         text-align: center;
     }

@@ -8,8 +8,8 @@
     max-width: $nav-width;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
-    z-index: 100; 
+    align-items: center;
+    z-index: 100;
 
     @include respond(tab-port) {
         top: 0;
@@ -25,7 +25,6 @@
         font-weight: 600;
         font-size: 3rem;
         text-align: center;
-        // margin-bottom: 1rem;
         outline: 3px solid $color-white;
         outline-offset: 3px;
     }
@@ -38,8 +37,8 @@
         color: white;
         font-size: 4rem;
         position: absolute;
-        top: 1rem;
-        right: 1.5rem;
+        top: 0.5rem;
+        right: 2rem;
         z-index: 200;
         display: none;
 
@@ -48,15 +47,13 @@
             backdrop-filter: blur(1rem);
         }
     }
-    
+
     &__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
         transition: all 0.3s;
-        padding-top: 2rem;
-        padding-left: 2rem;
 
         @include respond(tab-port) {
             flex-direction: column;
@@ -80,37 +77,46 @@
     &__item {
         border-bottom: 2px solid transparent;
         transition: all 0.6s;
+        text-align: center;
 
         @include respond(tab-port) {
             flex-direction: column;
-            margin-bottom: 3rem;
+            padding: 2rem 0;
+            width: 100vw;
         }
 
         &:hover {
             border-color: $color-primary;
+
+            @include respond(tab-port) {
+                border: none;
+            }
         }
 
         &:not(:last-child) {
             margin-right: 2rem;
+
+            @include respond(tab-port) {
+                margin-right: 0;
+            }
+        }
+
+        &:active {
+            @include respond(tab-port) {
+                background-color: $color-white;
+            }
         }
 
         & a,
-        & a:link, 
+        & a:link,
         & a:active {
             font-weight: 500;
             font-size: 2rem;
             color: white;
             text-decoration: none;
-        }
 
-        &.btn {
-            border: none;
-            
             @include respond(tab-port) {
-                font-weight: 500;
-                font-size: $default-font-size;
-                color: white;
-                text-decoration: none;
+                font-size: 2.5rem;
             }
         }
     }

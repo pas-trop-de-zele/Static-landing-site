@@ -120,7 +120,7 @@ body {
           transform: none;
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); } }
   .btn--orange {
-    background: #f3ad2c; }
+    background: #fb843b; }
 
 .popup__overlay {
   position: fixed;
@@ -183,7 +183,7 @@ body {
   color: #2f333e;
   transition: all 0.5s; }
   .popup__close:hover {
-    color: #f3ad2c; }
+    color: #fb843b; }
 
 .hidden {
   visibility: hidden;
@@ -228,7 +228,7 @@ body {
         width: 100%; } }
     .form__input:focus {
       outline: none;
-      border-color: #f3ad2c; }
+      border-color: #fb843b; }
 
 .header {
   width: 100%;
@@ -241,7 +241,11 @@ body {
   clip-path: ellipse(100vw 63vh at 50% 30%); }
   @media (max-width: 60em) {
     .header {
-      background-attachment: unset; } }
+      background-attachment: unset;
+      background-image: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.6) 100%), url("../../img/hero60.jpg"); } }
+  @media (max-width: 37.5em) {
+    .header {
+      background-image: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.6) 100%), url("../../img/hero37.jpg"); } }
   .header__text-box {
     position: absolute;
     top: 35%;
@@ -284,23 +288,22 @@ body {
     @media (max-width: 37.5em) {
       .footer__list {
         width: 48%; } }
-  .footer__logo {
-    outline: 3px solid #2f333e;
-    outline-offset: 3px; }
+  .footer__logo-picture {
+    width: 14rem; }
   .footer__item {
     list-style-type: none;
     font-size: 2rem;
     transition: all 0.3s;
     cursor: pointer; }
     .footer__item:hover {
-      color: #f3ad2c; }
+      color: #fb843b; }
     .footer__item i {
       transform: translateY(-5px); }
   .footer__link {
     color: #2f333e;
     transition: inherit; }
     .footer__link:hover {
-      color: #f3ad2c; }
+      color: #fb843b; }
   .footer__decorLine {
     width: 40%;
     height: 2px;
@@ -330,14 +333,8 @@ body {
       align-items: flex-start;
       height: 8vh;
       background-color: rgba(0, 0, 0, 0.2); } }
-  .navigation__logo {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 3rem;
-    text-align: center;
-    outline: 3px solid #fff;
-    outline-offset: 3px; }
+  .navigation__logo-picture {
+    width: 18rem; }
   .navigation__input {
     display: none; }
   .navigation__navBurger {
@@ -383,7 +380,7 @@ body {
         padding: 2rem 0;
         width: 100vw; } }
     .navigation__item:hover {
-      border-color: #f3ad2c; }
+      border-color: #fb843b; }
       @media (max-width: 60em) {
         .navigation__item:hover {
           border: none; } }

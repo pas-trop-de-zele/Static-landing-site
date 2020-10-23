@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/9aafa94e5b.js" crossorigin="anonymous"></script>
     <!-- Uncomment below for deving -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> --> 
-    
+    <link rel="stylesheet" href="./css/main.css">
+
     <!-- style.css is the official build file after compressing and prefix -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <title>HD Tax</title>
 </head>
+
 <body>
     <div class="navigation">
         <input type="checkbox" id="nav__input" class="navigation__input">
@@ -37,7 +40,8 @@
     <main>
         <div class="section-about" id="about">
             <div class="row">
-                <h2 class="heading-secondary">We are a team of tax professionals, thriving to tailor our services to your needs, be it personal or business related.</h2>
+                <h2 class="heading-secondary">We are a team of tax professionals, thriving to tailor our services to
+                    your needs, be it personal or business related.</h2>
             </div>
         </div>
 
@@ -47,7 +51,8 @@
                     <img class="illustration__picture" src="svgs/savings.svg" alt="">
                     <div class="illustration__description">
                         <h3 class="heading-tertiary">Maximizing your tax returns</h3>
-                        <p class="paragraph">We have teams specialing in retrieving your hard earned dollars.<br>Over 76% of our clients got more returns than they could have at other agencies*</p>
+                        <p class="paragraph">We have teams specialing in retrieving your hard earned dollars.<br>Over
+                            76% of our clients got more returns than they could have at other agencies*</p>
                     </div>
                 </div>
             </div>
@@ -56,7 +61,8 @@
                     <img class="illustration__picture" src="svgs/payroll.svg" alt="">
                     <div class="illustration__description second">
                         <h3 class="heading-tertiary">Quick and easy payroll service</h3>
-                        <p class="paragraph">We know your time is high value and we strive to restore your most precious resource <br> Let us do the unimportants so you could do the IMPORTANTs!</p>
+                        <p class="paragraph">We know your time is high value and we strive to restore your most precious
+                            resource <br> Let us do the unimportants so you could do the IMPORTANTs!</p>
                     </div>
                 </div>
             </div>
@@ -66,8 +72,10 @@
                     <img class="illustration__picture" src="svgs/fill-forms.svg" alt="">
                     <div class="illustration__description">
                         <h3 class="heading-tertiary">Requesting governmental assistance</h3>
-                        <p class="paragraph">Applying for governmental programs could be intimidating even to the best of us, <br>but do not worry because we are here you make sure you got the help you need.</p>
-                        <p class="paragraph">We have great success in applying for such as but not limit to EDD, SDI, PFL, etc.</p>
+                        <p class="paragraph">Applying for governmental programs could be intimidating even to the best
+                            of us, <br>but do not worry because we are here you make sure you got the help you need.</p>
+                        <p class="paragraph">We have great success in applying for such as but not limit to EDD, SDI,
+                            PFL, etc.</p>
                     </div>
                 </div>
             </div>
@@ -79,51 +87,56 @@
             </div>
         </div>
 
-        <div class="popup" id="popup">
-            <div class="popup__content">
-                <a class="popup__close" href="#exit-popup">&#215;</a>
-                <div class="popup__content--left">
-                    <form class="form" action="#" autocomplete="off">
-                        <div class="form__group title">
-                            <h3 class="heading-tertiary u-margin-bottom-big">Let us know your needs</h3>
-                        </div>
-                        <div class="form__group">
-                            <input class="form__input" type="text" id="full-name" name="full-name">
-                            <label class="form__label" for="full-name">Full Name</label>
-                        </div>
-                        <div class="form__group">
-                            <input class="form__input" type="email" id="email" name="email">
-                            <label class="form__label" for="email">Email</label>
-                        </div>
-                        <div class="form__group">
-                            <input class="form__input" type="tel" id="phone" name="phone">
-                            <label class="form__label" for="phone">Phone</label>
-                        </div>
-                        <div class="form__group">
-                            <input class="form__input" type="text" id="message" name="message">
-                            <label class="form__label" for="message">Message</label>
-                        </div>
-                        <div class="form__group submit">
-                            <button href="#" class="btn btn--orange">Send</button>
-                        </div>
-                    </form>
-                </div>
-                    <img class="popup__content--right" src="svgs/contact.svg" alt="">
+        <div class="popup__content hidden">
+            <a class="popup__close" href="#exit-popup">&#215;</a>
+            <div class="popup__content--left">
+                <form class="form" action="#" autocomplete="off">
+                    <div class="form__group title">
+                        <h3 class="heading-tertiary u-margin-bottom-big">Let us know your needs</h3>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="text" id="full-name" name="full-name">
+                        <label class="form__label" for="full-name">Full Name</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="email" id="email" name="email">
+                        <label class="form__label" for="email">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="tel" id="phone" name="phone">
+                        <label class="form__label" for="phone">Phone</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="text" id="message" name="message">
+                        <label class="form__label" for="message">Message</label>
+                    </div>
+                    <div class="form__group submit">
+                        <button href="#" class="btn btn--orange">Send</button>
+                    </div>
+                </form>
             </div>
+            <img class="popup__content--right" src="svgs/contact.svg" alt="">
         </div>
 
+        <div class="popup__overlay hidden"></div>
+
     </main>
-    
+
     <footer class="footer">
         <div class="row">
             <hr class="footer__decorLine">
             <ul class="footer__list">
-                <li class="footer__item"><h3 class="heading-tertiary footer__logo">HDTAX</h3></li>
+                <li class="footer__item">
+                    <h3 class="heading-tertiary footer__logo">HDTAX</h3>
+                </li>
                 <li class="footer__item"><a href="" class="footer__link"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="footer__item"><a href="https://www.yelp.com/biz/hd-tax-and-accounting-services-garden-grove" target="_blank" class="footer__link"><i class="fab fa-yelp"></i></a></li>
+                <li class="footer__item"><a href="https://www.yelp.com/biz/hd-tax-and-accounting-services-garden-grove"
+                        target="_blank" class="footer__link"><i class="fab fa-yelp"></i></a></li>
                 <li class="footer__item"><a href="" class="footer__link"><i class="fab fa-twitter"></i></a></li>
             </ul>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

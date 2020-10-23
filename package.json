@@ -6,7 +6,7 @@
   "scripts": {
     "liveDev": "live-server",
     "watch:sass": "node-sass --watch ./sass --output ./css",
-    "start": "npm-run-all --parallel liveDev compile:sass",
+    "start": "npm-run-all --parallel liveDev watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 5 versions\" css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",

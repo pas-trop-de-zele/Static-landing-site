@@ -19,14 +19,8 @@
         background-color: rgba($color-black, 0.2);
     }
 
-    &__logo {
-        text-decoration: none;
-        color: white;
-        font-weight: 600;
-        font-size: 3rem;
-        text-align: center;
-        outline: 3px solid $color-white;
-        outline-offset: 3px;
+    &__logo-picture {
+        width: 18rem;
     }
 
     &__input {

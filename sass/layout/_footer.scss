@@ -1,6 +1,6 @@
 .footer {
     padding: 5rem 0;
-    
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -13,10 +13,9 @@
             width: 48%;
         }
     }
-    
-    &__logo {
-        outline: 3px solid $color-grey;
-        outline-offset: 3px;
+
+    &__logo-picture {
+        width: 14rem;
     }
 
     &__item {
@@ -30,15 +29,14 @@
         }
 
         & i {
-            transform: translateY(-5px)
+            transform: translateY(-5px);
         }
-        
-    }    
+    }
 
     &__link {
         color: $color-grey;
         transition: inherit;
-        
+
         &:hover {
             color: $color-primary;
         }
@@ -55,4 +53,4 @@
             width: 55%;
         }
     }
-}   
+}
